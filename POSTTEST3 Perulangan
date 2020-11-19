@@ -1,9 +1,6 @@
 #Materi : Perulangan
 #2. Outputkan sebuah perulangan angka(1-9) kembali lagi ke 1 dengan input menggunakan NIM kalian + 10.
 #Contoh : NIM 1715016003
-import os
-def bersihin_layar():
-    os.system('cls' if os.name == 'nt' else 'clear')
 
 bersihin_layar()
 NIM = int("009")
