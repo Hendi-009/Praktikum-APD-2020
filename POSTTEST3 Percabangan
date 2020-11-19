@@ -48,7 +48,7 @@ def beli_kue_coklat(Total_coklat):
     elif 21 <= int(Total_coklat) <= 35:
         diskon_12(Total_coklat)
     elif int(Total_coklat) == 0:
-        print("Tidak membeli kue coklat")
+        tidak_beli_coklat(Total_coklat)
     else:
         print("Maaf kue coklat yang tersedia hanya 35 kue perhari")
 
@@ -61,7 +61,7 @@ def beli_kue_keju(Total_keju):
     elif 16 <= int(Total_keju) <= 25:
         diskon_15(Total_keju)
     elif int(Total_keju) == 0:
-        print("Tidak membeli kue keju")
+        tidak_beli_keju(Total_keju)
     else:
         print("Maaf kue keju yang tersedia hanya 25 kue perhari")
 
@@ -82,6 +82,10 @@ def diskon_12(Total_coklat):
     bayar = int(Total_coklat) * 3500 - diskon
     harga.insert(0, bayar)
     print("Harga kue coklat adalah: Rp.", bayar)
+def tidak_beli_coklat(Total_coklat):
+    bayar = int(Total_coklat) * 3500
+    harga.insert(0, bayar)
+    print("Tidak membeli kue coklat")
 
 #keju
 def normal_keju(Total_keju):
@@ -100,6 +104,11 @@ def diskon_15(Total_keju):
     bayar = int(Total_keju) * 6000 - diskon
     harga.insert(1, bayar)
     print("Harga kue keju adalah: Rp.", bayar)
+def tidak_beli_keju(Total_keju):
+    bayar = int(Total_keju) * 6000
+    harga.insert(1, bayar)
+    print("Tidak membeli kue keju")
+
 
 def login_pak_sule():
     print('=' * 20)
