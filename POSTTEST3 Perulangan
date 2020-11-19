@@ -1,0 +1,14 @@
+#Materi : Perulangan
+#2. Outputkan sebuah perulangan angka(1-9) kembali lagi ke 1 dengan input menggunakan NIM kalian + 10.
+#Contoh : NIM 1715016003
+
+NIM = int("009")
+NIM1 = NIM + 10
+y = 1
+x = 1
+while y <= int(NIM1):
+    print(x)
+    x += 1
+    if (x==10):
+        x -= 9
+    y += 1
